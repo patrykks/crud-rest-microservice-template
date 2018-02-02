@@ -1,0 +1,11 @@
+language: java
+
+script: "./mvnw -B package"
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: f9EOcn7D1mfZ0kuW0RvL05eOqr92c1PQ4CAmE8rYpvGfU96hFhHMUiR9RFYmBMMcDjQWR7rrP12Bjh7IMV6XNwRk4X9Qxsh+dV7b1mMHgOd+RevDPUq+nM7+u+p6fyyCQeIBOcGiI/vra//SG5DZfCnBWyAtG60d8KJ48eTVIGkB5qIjB6cs/ULXlVZ5s9NM+ZdLGtEJohSA1ZrSC/+gMQLOYGHuErNjLQV8BXP57zQwGr8x9KID+SUnRe0Yp8ptA6FQTN0pwNjFX7V9+0RFirQ+K3pAEdYuL6sBx8bfhKkamT1O4PRIVlH+q3yiyC3wLUcYGa6OPyt582ktM+lpUN/recMjnWJFqXnqR+7xvRgyNnVdD4zgexO+2uzPV1dDnyXflMySxMJtQn2DuUj4vDjbtyD2kyUiLa1Zj+GieNiKrasCKCuc8Ji8zTVbhY2LO3Yyf3EJomKCabgIP1fDp2S0TD7kp64Y6qjOlnwFEwVOQLrx3c5HPCCKwZrVsRLp9AgixDD8K23g9Y/J5/UC7C4I58q5t45NGUSTO6ZxQCnO7RDIoGLKuRFWS4JqMLDzMmVIB4FX7yjzG48y8Ql9rsFbODxYKhsP9p0aTfJUKClCWa2eXFAFO6PhVxk+Aa3Qin8+zlEmqvRd+HyQmQStk8jDWtfMZfOf+Ks1ehMJotg=
+  app: crud-rest-microservice
+  on:
+    branch: master
