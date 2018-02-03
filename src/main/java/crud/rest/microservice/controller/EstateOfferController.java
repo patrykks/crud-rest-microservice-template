@@ -19,12 +19,12 @@ public class EstateOfferController {
     EstateOfferService estateOfferService;
 
     @RequestMapping(value = "/{id}", method = GET)
-    public Optional<EstateOffer> getParkingLotById(@PathVariable(name = "id") Long id) {
+    public Optional<EstateOffer> getEstateOfferById(@PathVariable(name = "id") Long id) {
         return estateOfferService.findById(id);
     }
 
     @RequestMapping(method = GET)
-    public Iterable<EstateOffer> getParkingLots() {
+    public Iterable<EstateOffer> getEstateOffers() {
         return estateOfferService.findAll();
     }
 }
